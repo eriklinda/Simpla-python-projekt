@@ -1,5 +1,6 @@
 import requests
 import json
+import random
 
 #Länk att hämta json data ifrån!
 endpoint = 'http://dummy.restapiexample.com/api/v1/employees'
@@ -39,3 +40,6 @@ for alder in data["data"]:
 #Printar ut listorna med namn och ålder
 print("De är såhär gamla: " + str(anstlldas_aldrar))
 print("De heter även såhär: " + str(anstlldas_namn))
+
+#Printar ut månadens anställd
+print(("Månadens anställda är: {} för sitt grymma jobb som hen har utfört den här månaden!").format(random.choice(anstlldas_namn)))
