@@ -17,8 +17,6 @@ def rakna_vokaler(ordet):
         if vokal in vokaler:
             #Lägger till alla vokaler i listan som är skapad
             antal_vokaler.append(vokal)
-        else:
-            return print("Det finns ingen vokal i ditt ord")
 
     #Räknar alla ev vokaler och lämnar tillbaka dem
     return len(antal_vokaler)
